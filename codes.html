@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Python Codes · Shahid Hasnain, PhD</title>
+<meta name="description" content="Shahid Hasnain, PhD: computational applied mathematician working on numerical methods for nonlinear PDEs, mathematical biology and biofluids.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="name" href="index.html">S. Hasnain</a>
+    <ul>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="codes.html" aria-current="page">Python Codes</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <header class="page-head">
+    <h1>Python Codes</h1>
+    <p>Open-source Python codes from my published research.</p>
+  </header>
+
+<div class="sub-layout">
+  <aside class="subnav" aria-label="Python Codes">
+    <ul>
+      <li><a href="codes.html" aria-current="page">Python</a></li>
+    </ul>
+  </aside>
+  <div class="sub-main">
+  <section id="python">
+    <header><p class="label">Python</p><h2>Python codes</h2></header>
+    <div>
+        <p class="panel-intro">Open-source solvers from my published articles. Each package contains the solver, a script that draws the figure shown here, a short guide and a quick check you can run.</p>
+        <article class="code-item" id="code-scirep2026">
+          <img src="code-scirep2026-bolus.jpg" alt="Bolus Results: trapped bolus in the wave frame for viscosity Models I, II and III, computed with the solver" width="1200" height="374" loading="lazy">
+          <div>
+            <p class="label">Released · Python</p>
+            <h3>Magneto-nanolubricant peristaltic flow solver</h3>
+            <p class="code-who">Companion code for Hasnain, Al-Atawi &amp; Saqib, <i>Scientific Reports</i> (2026)</p>
+            <p>A finite-volume solver for peristaltic flow of synovial fluid between the wavy membrane and the cartilage of the knee: velocity, temperature, nanoparticle concentration, induced magnetic field and a FitzHugh–Nagumo-type neural-activation field, with three non-Newtonian viscosity models. Every governing equation and boundary condition is written out in the code, next to the step that solves it.</p>
+            <ul class="code-points">
+              <li>Beavers–Joseph slip or no-slip walls, convective (Biot) heat exchange, and a positivity-preserving scheme for the concentration</li>
+              <li>dp/dx from the flux constraint, and the free-pumping flow rate (zero net pressure rise over one wavelength), both by secant iteration</li>
+              <li>Includes <code>bolus_results.py</code>, which draws the Bolus Results figure shown here</li>
+              <li>The Bolus Results figure is an illustrative demonstration, not a figure from the article</li>
+            </ul>
+            <p class="meta">Python · NumPy · Matplotlib · MIT licence</p>
+            <p class="actions">
+              <a class="btn primary" href="scirep2026-magneto-nanolubricant.zip" download>Download code (ZIP)</a>
+              <a class="btn" href="https://doi.org/10.1038/s41598-026-71090-4" target="_blank" rel="noopener">Read the article</a>
+            </p>
+          </div>
+        </article>
+        <article class="code-item" id="code-aims2026">
+          <img src="code-aims2026-contour.jpg" alt="Temperature Results: temperature contour over one wave period of the wavy synovial channel, Model I, computed with the solver" width="1200" height="572" loading="lazy">
+          <div>
+            <p class="label">Released · Python</p>
+            <h3>Gold-nanoparticle synovial flow solver</h3>
+            <p class="code-who">Companion code for Alshammari, Hasnain &amp; Saqib, <i>AIMS Mathematics</i> 11(7) (2026) 22543–22575</p>
+            <p>A finite-volume solver for flow, heat, nanoparticle concentration and induced magnetic field in a wavy, porous annular channel of the knee joint, with a temperature- and concentration-dependent Carreau–Yasuda viscosity and second-order slip at the outer wavy wall. Every step in the code quotes the article equation and boundary condition it implements, so you can follow the mathematics line by line.</p>
+            <ul class="code-points">
+              <li>Solves Eqs. (3.7)–(3.17) of the article; the pressure gradient is found by direct superposition at a fixed flow rate, exact at convergence</li>
+              <li>A corrected version of the code used for the article: the radial grid follows the wavy wall, and the source terms follow the signs of Eqs. (3.9)–(3.10), so numbers differ slightly from the published figures</li>
+              <li>Includes <code>temperature_results.py</code>, which draws the Temperature Results contour shown here</li>
+              <li>The Temperature Results figure is an illustrative demonstration, not a figure from the article</li>
+            </ul>
+            <p class="meta">Python · NumPy · SciPy · Matplotlib · MIT licence</p>
+            <p class="actions">
+              <a class="btn primary" href="aims2026-synovial-nanofluid.zip" download>Download code (ZIP)</a>
+              <a class="btn" href="https://doi.org/10.3934/math.2026911" target="_blank" rel="noopener">Read the article</a>
+            </p>
+          </div>
+        </article>
+        <div class="collab-note">
+          <h3>Using these codes? Let us work together</h3>
+          <p>I welcome collaboration on extensions of these models: new rheology, other joint geometries, time-dependent loading, comparison with experiments, or student projects built on the code. If you use a code, find a problem, or would like to collaborate, please write to me at <span class="em">shahid.hasnain@uoc.edu.pk</span>.</p>
+          <p class="actions"><a class="btn" href="about.html">Contact details</a></p>
+        </div>
+        <p class="note">Code will be hosted on GitHub. Each project links here when it is released.</p>
+      
+    </div>
+  </section>
+
+  </div>
+</div>
+
+  <footer>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="codes.html">Python Codes</a></li>
+    </ul>
+    <p>© 2026 Shahid Hasnain.</p>
+  </footer>
+</main>
+<script src="main.js"></script>
+</body>
+</html>

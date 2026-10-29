@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Current Studies · Research · Shahid Hasnain, PhD</title>
+<meta name="description" content="Shahid Hasnain, PhD: computational applied mathematician working on numerical methods for nonlinear PDEs, mathematical biology and biofluids.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="name" href="index.html">S. Hasnain</a>
+    <ul>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="codes.html">Python Codes</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <header class="page-head">
+    <h1>Research</h1>
+    <p>What I am working on now, and my publications.</p>
+  </header>
+
+<div class="sub-layout">
+  <aside class="subnav" aria-label="Research">
+    <ul>
+      <li><a href="research.html" aria-current="page">Current Studies</a></li>
+      <li><a href="research_publications.html">Publications</a></li>
+    </ul>
+  </aside>
+  <div class="sub-main">
+  <section id="current">
+    <header><p class="label">Now</p><h2>Current Studies</h2></header>
+    <div>
+      <p class="prose" style="margin:0 0 18px">The problems I am working on at present. Each line is an active study, a manuscript in preparation or one under review.</p>
+      <ol class="studies">
+        <li><h3>Boosted lubrication of the knee</h3><p>Ultrafiltration of hyaluronic acid at the cartilage surface during joint loading, modelled as a free-boundary problem and solved with a two-domain finite volume method.</p></li>
+        <li><h3>Squeeze-film lubrication of articular gaps</h3><p>Transient non-Newtonian flow in a permeable, sliding joint gap, coupled with heat and mass transport.</p></li>
+        <li><h3>Coupled film–porous-layer flows</h3><p>Two-domain finite volume solvers for a fluid film over a porous pad, applied to externally pressurised porous bearings.</p></li>
+        <li><h3>Boundary value problems on unbounded domains</h3><p>Accurate numerical treatment of two-point boundary value problems with conditions at infinity; a long-term direction with topics for student projects.</p></li>
+        <li><h3>Finite elements for multiscale poroelastic media</h3><p>Solving the homogenised cell problems of active poroelastic tissue with FEniCSx.</p></li>
+        <li><h3>Steady periodic water waves</h3><p>Small-amplitude waves in a channel of finite depth: asymptotic analysis of the flow force, with sixth-order compact schemes.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="research">
+    <header><p class="label">Background</p><h2>How my research developed</h2></header>
+    <div>
+      <p class="prose" style="margin:0 0 22px">My research has developed in two phases. During my doctoral studies I designed implicit, operator-splitting and compact finite-difference schemes for nonlinear reaction–diffusion systems. Since 2018 I have extended this work to structured finite-volume solvers for incompressible, porous-media and biofluid flows. Both phases are united by one aim, to obtain accurate, stable and rigorously verified solutions of coupled nonlinear PDEs.</p>
+      <ol class="journey">
+        <li class="stage">
+          <p class="label">Stage 1 · PhD, 2015–2018</p>
+          <h3>Finite differences for reaction–diffusion</h3>
+          <dl>
+            <dt>Methods</dt><dd>Crank–Nicolson, alternating direction implicit (ADI) and Douglas schemes; sixth-order compact finite differences for high accuracy; stability and convergence analysis.</dd>
+            <dt>Problems</dt><dd>Fisher–KPP, Burgers and Burgers–Huxley equations in one, two and three dimensions, as single equations and coupled systems, under different boundary and initial conditions; the Gray–Scott pattern-forming model.</dd>
+          </dl>
+        </li>
+        <li class="stage">
+          <p class="label">Stage 2 · 2018–present</p>
+          <h3>Finite volumes for flow and transport</h3>
+          <dl>
+            <dt>Methods</dt><dd>Structured-grid finite volume discretisation; upwind schemes; staggered grids; SIMPLE and PISO pressure–velocity coupling.</dd>
+            <dt>Problems</dt><dd>Navier–Stokes and Brinkman–Darcy models of synovial fluid flow, heat and nutrient transport in the knee joint; natural convection of nanofluids in a square cavity; tumour growth and neural signalling.</dd>
+          </dl>
+        </li>
+        <li class="stage next">
+          <p class="label">Current direction</p>
+          <h3>Finite elements for complex geometries</h3>
+          <dl>
+            <dt>Why</dt><dd>Real joints and tissues have curved, irregular shapes that structured grids handle poorly. I am extending my toolkit to the finite element method, building on my Linköping training, with the open-source FEniCSx framework.</dd>
+          </dl>
+        </li>
+      </ol>
+      
+      
+    
+    </div>
+  </section>
+
+  <section id="projects">
+    <header><p class="label">Funding</p><h2>Projects</h2></header>
+    <div>
+      <ol class="tl">
+        <li><div class="when">2018 – 2019</div><div><h3>Optimised study of the two-dimensional Gray–Scott coupled nonlinear PDE system, with application to tumour-growth modelling</h3><div class="where">HEC Start-up Research Grant Programme (SRGP) · PIEAS, Islamabad, Pakistan</div><p><span class="role-tag">Principal Investigator</span> Final report accepted April 2019. Results published in <i>AIP Advances</i> 9 (2019) 105023.</p></div></li>
+        <li><div class="when">2013</div><div><h3>Simulation and Control of the Underground Coal Gasification Process</h3><div class="where">National ICT R&amp;D Fund · Muhammad Ali Jinnah University (CUST), Islamabad, Pakistan</div><p><span class="role-tag">Research Assistant</span> Numerical modelling of a coupled reactive-transport problem.</p></div></li>
+      </ol>
+    
+    </div>
+  </section>
+
+  </div>
+</div>
+
+  <footer>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="codes.html">Python Codes</a></li>
+    </ul>
+    <p>© 2026 Shahid Hasnain.</p>
+  </footer>
+</main>
+<script src="main.js"></script>
+</body>
+</html>

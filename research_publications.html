@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications · Research · Shahid Hasnain, PhD</title>
+<meta name="description" content="Shahid Hasnain, PhD: computational applied mathematician working on numerical methods for nonlinear PDEs, mathematical biology and biofluids.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="name" href="index.html">S. Hasnain</a>
+    <ul>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="codes.html">Python Codes</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <header class="page-head">
+    <h1>Research</h1>
+    <p>What I am working on now, and my publications.</p>
+  </header>
+
+<div class="sub-layout">
+  <aside class="subnav" aria-label="Research">
+    <ul>
+      <li><a href="research.html">Current Studies</a></li>
+      <li><a href="research_publications.html" aria-current="page">Publications</a></li>
+    </ul>
+  </aside>
+  <div class="sub-main">
+  <section id="publications">
+    <header><p class="label">Publications</p><h2>Publications</h2></header>
+    <div>
+      <div class="tabs" role="tablist" aria-label="Publications">
+        <button class="tab" role="tab" id="tab-articles" aria-controls="p-articles" aria-selected="true" type="button">Journal Articles</button>
+        <button class="tab" role="tab" id="tab-dissertations" aria-controls="p-dissertations" aria-selected="false" type="button">Dissertations</button>
+      </div>
+      <div class="panel" role="tabpanel" id="p-articles" aria-labelledby="tab-articles">
+      <div class="pub-tools" role="group" aria-label="Filter publications">
+        <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-f="first" aria-pressed="false">First author</button>
+        <button class="chip" type="button" data-f="corr" aria-pressed="false">Corresponding author</button>
+        <button class="chip" type="button" data-f="code" aria-pressed="false">With code</button>
+      </div>
+      <ol class="pubs" id="pubs"></ol>
+      <p style="font-size:14px;color:var(--muted);margin-top:18px">The full list with citation metrics is on my Google Scholar profile.</p>
+    </div>
+      <div class="panel" role="tabpanel" id="p-dissertations" aria-labelledby="tab-dissertations" hidden>
+        <p class="panel-intro">My two research dissertations: the PhD work on finite-difference schemes for reaction–diffusion systems, later published as a book, and the MS work on steady water waves.</p>
+        <div class="th-list">
+          <article class="th-item">
+            <img src="book-phd-cover.jpg" alt="Cover of the book FD schemes for numerical study of nonlinear coupled RD system" width="596" height="900" loading="lazy">
+            <div>
+              <p class="label">PhD thesis · published as a book</p>
+              <h3>FD schemes for numerical study of nonlinear coupled RD system</h3>
+              <p class="who">Shahid Hasnain · LAP LAMBERT Academic Publishing, 2018</p>
+              <p>Reaction–diffusion equations describe how chemicals, populations or tumour cells spread and react with each other. This book compares the main finite-difference methods for solving them: explicit and implicit schemes, for single equations and for coupled systems in one and two dimensions, with the Fisher–KPP equation as a test case. For each scheme it checks the three properties that decide whether a numerical answer can be trusted (consistency, stability and convergence) and measures accuracy against computing cost. It also shows how a variable grid puts extra points where the solution changes fastest.</p>
+              <dl class="facts">
+                <dt>Based on</dt><dd>PhD dissertation, King Abdulaziz University, Jeddah, approved 2017</dd>
+                <dt>Supervisor</dt><dd>Prof. Daoud S. Mashat</dd>
+                <dt>ISBN</dt><dd>978-620-2-00792-4</dd>
+              </dl>
+            </div>
+          </article>
+          <article class="th-item">
+            <img src="thesis-ms-cover.jpg" alt="Title page of the MS thesis Steady periodic water waves solutions using asymptotic approach" width="572" height="900" loading="lazy">
+            <div>
+              <p class="label">MS thesis</p>
+              <h3>Steady periodic water waves solutions using asymptotic approach</h3>
+              <p class="who">Shahid Hasnain · Linköping University, Sweden, 2011</p>
+              <p>A steady water wave in a channel of finite depth has two fixed quantities: the height of the wave and the flow force, the total push of the water through the channel. This thesis asks how the two are related for waves of small amplitude. Using an asymptotic (small-parameter) expansion together with separation of variables, it builds every such wave step by step, then shows numerically that the flow force increases steadily with the wave height.</p>
+              <dl class="facts">
+                <dt>Supervisor</dt><dd>Prof. Vladimir Kozlov</dd>
+                <dt>Report no.</dt><dd>LiTH-MAI-EX--2011/14-SE</dd>
+              </dl>
+              <p class="actions"><a class="btn" href="Hasnain-MS-thesis-Linkoping-2011.pdf" target="_blank" rel="noopener">Read the thesis (PDF, 49 pages)</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+</div>
+
+  <footer>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="codes.html">Python Codes</a></li>
+    </ul>
+    <p>© 2026 Shahid Hasnain.</p>
+  </footer>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
