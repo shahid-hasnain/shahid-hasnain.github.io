@@ -1,5 +1,6 @@
 /* ---------- publications ---------- */
 const P=[
+ [2026,"A coupled transport model for magnetic hyperthermia in brain tumor therapy: Numerical investigation and analysis","M. Saqib, A. Siddique, S. Hasnain, M. Hafez, M. Farman, E. Hincal","Ain Shams Engineering Journal","17(12), 104507","10.1016/j.asej.2026.104507",[],""],
  [2026,"Numerical study of magneto-nanolubricant transport through a porous wavy channel using three non-Newtonian rheological models","S. Hasnain, N. O. Al-Atawi, M. Saqib","Scientific Reports","2026","10.1038/s41598-026-71090-4",["first","corr","code"],"code-scirep2026"],
  [2026,"Heat and mass transfer in gold nanoparticle-enhanced synovial fluid for biomedical applications: a Carreau–Yasuda study","B. S. Alshammari, S. Hasnain, M. Saqib","AIMS Mathematics","11(7) 22543–22575","10.3934/math.2026911",["corr","code"],"code-aims2026"],
  [2025,"Innovative modeling of joint dynamics and pain pathways: numerical study","S. Hasnain, M. Saqib, I. Abbas","International Communications in Heat and Mass Transfer","169, 109454","10.1016/j.icheatmasstransfer.2025.109454",["first","corr"]],
