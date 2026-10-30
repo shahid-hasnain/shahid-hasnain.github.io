@@ -41,6 +41,23 @@
     <header><p class="label">Python</p><h2>Python codes</h2></header>
     <div>
         <p class="panel-intro">Open-source solvers from my published articles. Each package contains the solver, a script that draws the figure shown here, a short guide and a quick check you can run.</p>
+          <article class="code-item" id="code-asej2026">
+          <img src="code-asej2026-temperature.jpg" alt="Temperature Results: steady temperature field in the tumour at the base operating point, computed with the solver" width="1200" height="864" loading="lazy">
+          <div>
+            <p class="label">Released · Python</p>
+            <h3>Magnetic hyperthermia transport solver</h3>
+            <p class="code-who">Companion code for Saqib, Siddique, Hasnain, Hafez, Farman &amp; Hincal, <i>Ain Shams Engineering Journal</i> (2026)</p>
+            <p>A method-of-lines solver for nanoparticle transport and heating in a brain tumour: concentration and tissue temperature, coupled through an Arrhenius clearance term, in an axisymmetric (r, w) domain. Every governing equation and boundary condition is written out in the code, next to the step that solves it.</p>
+            <ul class="code-points">
+              <li>Fourth-order radial differencing (dss004, dss044), upwind axial convection, and a stiff BDF time integrator</li>
+              <li>Convective cooling at the tumour margin and zero particle flux, with the centreline treated by L'Hôpital's rule</li>
+              <li>Includes <code>asej2026_hyperthermia.py</code>, which reproduces Figures 6 and 12 and Table 5 of the article, and draws the Temperature Results figure shown here</li>
+              <li>The Temperature Results figure is an illustrative demonstration, not a figure from the article</li>
+            </ul>
+            <p class="meta">Python · NumPy · SciPy · Matplotlib · MIT licence</p>
+            <p class="actions"><a class="btn" href="code-asej2026.zip" download>Download code</a> <a class="btn" href="https://doi.org/10.1016/j.asej.2026.104507" target="_blank" rel="noopener">Read the article</a></p>
+          </div>
+        </article>
         <article class="code-item" id="code-scirep2026">
           <img src="code-scirep2026-bolus.jpg" alt="Bolus Results: trapped bolus in the wave frame for viscosity Models I, II and III, computed with the solver" width="1200" height="374" loading="lazy">
           <div>
